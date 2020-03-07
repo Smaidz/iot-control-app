@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "iot-control-app": {
+    "iot-control-interface-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/iot-control-app",
+            "outputPath": "dist/iot-control-interface-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "iot-control-app:build"
+            "browserTarget": "iot-control-interface-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "iot-control-app:build:production"
+              "browserTarget": "iot-control-interface-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "iot-control-app:build"
+            "browserTarget": "iot-control-interface-app:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "iot-control-app:serve"
+            "devServerTarget": "iot-control-interface-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "iot-control-app:serve:production"
+              "devServerTarget": "iot-control-interface-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "iot-control-app"
+  "defaultProject": "iot-control-interface-app"
 }
