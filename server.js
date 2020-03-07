@@ -5,7 +5,7 @@ const path = require('path');
 app.use(express.static('.'));
 
 app.get('/', function(req,res) {
-	res.send("Test");
+	res.send("index.html");
 });
 
 app.listen(process.env.PORT || 8080);
